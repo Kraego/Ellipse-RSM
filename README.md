@@ -1,4 +1,4 @@
-# Adapted Rubber Sheet model (RSM)
+# Adapted Rubber Sheet Model (RSM)
 
 ## About
 
