@@ -3,8 +3,8 @@
 ## About
 
 In the need for unwrapping a ellipse instead of a circle, during my master-thesis,
-this adapted version of the RSM was created. And served it's purpose. Since in my
-usecase the radius is allways fixed there is **no normalization** as in the original
+this adapted version of the Rubber Sheet Model (RSM) was created. And served it's purpose. Since in my
+usecase the thickness is allways fixed there is **no normalization** as in the original
 method, regarding the radius (or axis increasement in this case).
 
 The original RSM by Dougman see:
@@ -20,3 +20,4 @@ The implementation is a altered version of https://github.com/YifengChen94/IrisR
 
 * *2_RSM_Try.ipynb* - Jupyter book with tryouts
 * *adaptedRSM.py* - Concrete implementation of the idea
+* *math_utils.py* - Helper functions for RSM

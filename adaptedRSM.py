@@ -3,9 +3,9 @@ import numpy as np
 from math_utils import polar_r_ellipse, get_x_y_from_polar_r
 
 
-def _is_in_image(image, x, y):
-    width = image.shape[0]
-    height = image.shape[1]
+def _is_in_image(image, y, x):
+    height = image.shape[0]
+    width = image.shape[1]
 
     return 0 < x < width and 0 < y < height 
 
@@ -31,7 +31,7 @@ def daugman_normalization_ellipse(image, from_theta, to_theta, center, inner_axi
     to_theta = to_theta + np.pi * 2 if to_theta < from_theta else to_theta
     thetas = np.arange(from_theta, to_theta, abs(to_theta - from_theta) / samples)  
 
-    # Create empty flatten image - rectangular region in polar coordinates
+    # Create black (empty) image - rectangular region in polar coordinates
     polarForm = np.zeros((ellipse_thickness, samples, 3), np.uint8)
 
     for r in range(ellipse_thickness):
@@ -54,8 +54,8 @@ def daugman_normalization_ellipse(image, from_theta, to_theta, center, inner_axi
             x = center[1] + xr
             y = center[0] + yr
 
+            # thru 90° rotation (different axis of ellipse) - width and height are switched
             if _is_in_image(image, x, y):
-                # thru 90° rotation (different axis) - width and height are switched
                 pixel = image[int(x)][int(y)]  # get Cartesian pixel
             else:
                 pixel = (0, 0, 255)
