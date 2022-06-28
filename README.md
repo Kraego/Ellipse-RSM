@@ -7,7 +7,7 @@ this adapted version of the Rubber Sheet Model (RSM) was created. And served it'
 usecase the thickness is allways fixed there is **no normalization** as in the original
 method, regarding the radius (or axis increasement in this case).
 
-The original RSM by Dougman see:
+The original RSM by Daugman see:
 
 *Daugman, J. (Jan. 2004). “How iris recognition works”. In: IEEE Transactions
 on Circuits and Systems for Video Technology 14.1. Conference Name: IEEE
