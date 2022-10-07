@@ -2,7 +2,7 @@
 
 ## About
 
-In the need for unwrapping a ellipse instead of a circle, during my master-thesis,
+In the need for unwrapping a ellipse instead of a circle, during my master-thesis (https://opus.fhv.at/frontdoor/index/index/docId/4530)
 this adapted version of the Rubber Sheet Model (RSM) was created. And served it's purpose. Since in my
 usecase the thickness is allways fixed there is **no normalization** as in the original
 method, regarding the radius (or axis increasement in this case).
